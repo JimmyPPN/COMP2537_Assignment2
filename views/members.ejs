@@ -1,0 +1,77 @@
+<%- include("templates/headers") %>
+<head>
+  <style>
+    .bordered-column {
+      border-style:double;
+      border-width: 7px;
+      border-color: rgb(184, 77, 35);
+      padding: 15px;
+    }
+
+    .uniform-image {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      margin: auto;
+    }
+  </style>
+</head>
+<div class="container-fluid">
+  <h1>Welcome to the Member's Area, <%= username %>!</h1>
+</div>
+<div class="container-fluid">
+  <h2 style="padding-bottom: 30px">Gas and Rubber!</h2>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4 bordered-column">
+      <img
+        src="car1.jpeg"
+        class="img-responsive uniform-image"
+        alt="car1"
+      />
+    </div>
+    <div class="col-sm-4 bordered-column">
+      <img src="car_drift.gif" class="img-responsive uniform-image" alt="car drift" />
+    </div>
+    <div class="col-sm-4 bordered-column">
+      <img
+        src="car2.jpeg"
+        class="img-responsive uniform-image"
+        alt="car2"
+      />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 bordered-column">
+      <img
+        src="car3.jpg"
+        class="img-responsive uniform-image"
+        alt="car3"
+      />
+    </div>
+    <div class="col-sm-4 bordered-column">
+        <img src="car_drift2.gif" class="img-responsive uniform-image" alt="car drift2" />
+    </div>
+    <div class="col-sm-4 bordered-column">
+      <img src="car403.jpeg" class="img-responsive uniform-image" alt="nsx" />
+    </div>
+</div>
+
+<div class="container-fluid" style="padding-top: 50px; padding-bottom: 30px;">
+  <a
+    class="btn btn-primary"
+    href="/"
+    role="button"
+    style="margin: auto; padding: 10px; font-size: 10px"
+    >Home</a
+  >
+  <a
+    class="btn btn-primary"
+    href="/logout"
+    role="button"
+    style="margin: auto; padding: 10px; font-size: 10px"
+    >Log out</a
+  >
+</div>
+<%- include("templates/footer") %>
